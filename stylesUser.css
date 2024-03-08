@@ -1,0 +1,119 @@
+/* Variables de color */
+:root {
+    --color-fondo-claro: #F2D230; /* Color de fondo claro */
+    --color-bordes: #BF3F34; /* Color de los bordes */
+    --color-fondo-oscuro: #0D0D0D; /* Color de fondo oscuro */
+    --color-fondo-oscuro-claro: #F2B035; /* Color de fondo oscuro claro */
+    --color-fondo-body: #63A69A; /* Color de fondo del cuerpo */
+    --color-texto: #333; /* Color del texto */
+    --color-texto-secundario: #666; /* Color del texto secundario */
+    --color-texto-menu: #fff; /* Color del texto del menú */
+    --color-sombra-blanca: 15px 15px 20px rgba(255, 255, 255, 0.5); /* Sombra blanca */
+    --fuente-titulo: Arial, sans-serif; /* Fuente para títulos */
+    --fuente-texto: 'Times New Roman', Times, serif; /* Fuente para texto */
+}
+
+/* Estilos generales */
+body {
+    background-color: var(--color-fondo-body);
+    color: var(--color-texto);
+    margin: 0;
+    padding: 0;
+    font-family: var(--fuente-texto);
+}
+
+/* Estilos para el encabezado */
+header {
+    background-color: var(--color-fondo-oscuro);
+    color: var(--color-texto-menu);
+    padding: 20px;
+    border-bottom: 2px solid var(--color-texto-menu);
+    display: flex;
+    justify-content: space-between; /* Alineación horizontal */
+    align-items: center; /* Alineación vertical */
+}
+
+/* Estilos para el logo */
+header img.logo {
+    width: 100px;
+    height: 100px;
+}
+article img.logo {
+    width: 300px;
+    height: 300px;
+    right: 0;
+}
+article h3 p {
+   justify-content: center;
+}
+
+/* Estilos para la barra de navegación */
+nav ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row; /* Alinear elementos horizontal */
+}
+
+nav ul li {
+    margin-right: 20px; /* Espacio entre elementos */
+}
+
+/* Estilos para las secciones */
+.section {
+    margin: 20px 0;
+    padding: 20px;
+    border: 2px solid var(--color-bordes);
+    overflow: hidden;
+
+}
+
+/* Estilos para los títulos de las secciones */
+header h1,
+header h3 {
+    color: var(--color-texto);
+    font-family: var(--fuente-titulo);
+    
+
+}
+
+/* Estilos para los párrafos */
+article p {
+    color: var(--color-texto-secundario);
+}
+
+/* Estilos para las listas */
+article ul {
+    color: var(--color-texto);
+}
+
+article ul li {
+    margin-bottom: 10px;
+}
+
+/* Estilos específicos para las secciones */
+#home {
+    background-color: var(--color-fondo-claro);
+}
+
+#about {
+    background-color: var(--color-fondo-oscuro-claro);
+}
+
+#events {
+    background-color: var(--color-fondo-claro);
+}
+
+#logo {
+    background-color: var(--color-fondo-oscuro-claro);
+}
+
+#contact {
+    background-color: var(--color-fondo-claro);
+}
+
+/* Estilos para los encabezados de las secciones */
+section header {
+    box-shadow: var(--color-sombra-blanca);
+    position: relative;
+    z-index: 1;
+}
